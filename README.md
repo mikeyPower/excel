@@ -83,3 +83,34 @@ This will highlight all the rows where the name of the Sales Rep is ‘Bob’.
 Note that the trick here is to use a dollar sign ($) before the column alphabet ($C1). By doing this, we have locked the column to always be C. So even when cell A2 is being checked for the formula, it will check C2, and when A3 is checked for the condition, it will check C3.
 
 This allows us to highlight the entire row by conditional formatting.
+
+
+## Excel logical operators - overview
+
+
+![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/logical%20operators/logical%20operators%20overview.PNG)
+
+The screenshot below demonstrates the results returned by Equal to, Not equal to, Greater than and Less than logical operators:
+
+![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/logical%20operators/excel-logical-operators-example.png)
+
+
+## Example 1. Using the "Equal to" operator with dates
+
+You might be surprised to know that the Equal to logical operator cannot compare dates as easily as numbers. For example, if the cells A1 and A2 contain the date "12/1/2014", the formula =A1=A2 will return TRUE exactly as it should.
+
+To get the correct result, you must always wrap a date in the DATEVALUE function, like this =A1=DATEVALUE("12/1/2014")
+
+![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/logical%20operators/equal-to-dates.png)
+
+## Example 2. Using the "Equal to" operator with text values
+
+Using Excel's Equal to operator with text values does not require any extra twists. The only thing you should keep in mind is that the Equal to logical operator in Excel is case-insensitive, meaning that case differences are ignored when comparing text values.
+
+If you want to compare text values taking in to account their case differences, you should use the EXACT function instead of the Equal to operator. The syntax of the EXACT function is as simple as:
+
+    EXACT(text1, text2)
+    
+Where text 1 and text2 are the values you want to compare. If the values are exactly the same, including case, Excel returns TRUE; otherwise, it returns FALSE.
+
+![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/logical%20operators/equal-to-case-sensitive.png)
