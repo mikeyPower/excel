@@ -4,7 +4,7 @@
 
 1. In a blank cell, type this formula =SUM(IF(ISERROR(A1:C10),1)).
 
-![alt text](https://raw.githubusercontent.com/mikeyPower/excelsior/branch/path/to/img.png)
+![alt text](1.png)
 
 2. Then press Ctrl+Shift+Enter keys together, and you will get the number of all the error values of the range.
 
