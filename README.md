@@ -33,4 +33,4 @@ If you want to count the number of cells without errors, you can use this array 
 
 ![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/6.png)
 
-![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/7.png)
+![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/7png.png)
