@@ -132,3 +132,43 @@ Based on the Excel spreadsheet above, the following ISBLANK examples would retur
     =ISBLANK("Tech on the Net")
     Result: FALSE
     
+## Excel Logical Functions
+
+The following table provides a short summary of what each logical function does to help you choose the right formula for a specific task.
+
+![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/isblank/isblank001.gif)
+
+Excel logical functions - facts and figures
+1. In arguments of the logical functions, you can use cell references, numeric and text values, Boolean values, comparison operators, and other Excel functions. However, all arguments must evaluate to the Boolean values of TRUE or FALSE, or references or arrays containing logical values.
+2. If an argument of a logical function contains any empty cells, such values are ignored. If all of the arguments are empty cells, the formula returns #VALUE! error.
+3. If an argument of a logical function contains numbers, then zero evaluates to FALSE, and all other numbers including negative numbers evaluate to TRUE. For example, if cells A1:A5 contain numbers, the formula =AND(A1:A5) will return TRUE if none of the cells contains 0, FALSE otherwise.
+4. A logical function returns the #VALUE! error if none of the arguments evaluate to logical values.
+5. A logical function returns the #NAME? error if you've misspell the function's name or attempted to use the function in an earlier Excel version that does not support it. For example, the XOR function can be used in Excel 2016 and 2013 only.
+
+## Using AND function
+
+The AND function tests the conditions you specify and returns TRUE if all of the conditions evaluate to TRUE, FALSE otherwise.
+
+The syntax for the Excel AND function is as follows:
+
+    AND(logical1, [logical2], …)
+Where logical is the condition you want to test that can evaluate to either TRUE or FALSE. The first condition (logical1) is required, subsequent conditions are optional.
+
+And now, let's look at some formula examples that demonstrate how to use the AND functions in Excel formulas.
+
+![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/isblank/isblank001.gif)
+
+One of the most common uses of the Excel AND function is found in the logical_test argument of the IF function to test several conditions instead of just one. For example, you can nest any of the AND functions above inside the IF function and get a result similar to this:
+
+    =IF(AND(A2="Bananas", B2>C2), "Good", "Bad")
+    
+![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/isblank/isblank001.gif)
+
+
+## Using the OR function
+
+The difference is that the OR function returns TRUE if at least one if the arguments evaluates to TRUE, and returns FALSE if all arguments are FALSE. The OR function is available in all versions of Excel 2016 - 2000.
+
+The syntax of the Excel OR function is very similar to AND:
+
+    OR(logical1, [logical2], …)
