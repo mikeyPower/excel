@@ -156,13 +156,13 @@ Where logical is the condition you want to test that can evaluate to either TRUE
 
 And now, let's look at some formula examples that demonstrate how to use the AND functions in Excel formulas.
 
-![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/isblank/isblank001.gif)
+![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/logical%20functions/excel-and-function.png)
 
 One of the most common uses of the Excel AND function is found in the logical_test argument of the IF function to test several conditions instead of just one. For example, you can nest any of the AND functions above inside the IF function and get a result similar to this:
 
     =IF(AND(A2="Bananas", B2>C2), "Good", "Bad")
     
-![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/isblank/isblank001.gif)
+![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/logical%20functions/excel-and-if-functions.png)
 
 
 ## Using the OR function
@@ -175,7 +175,7 @@ The syntax of the Excel OR function is very similar to AND:
     
 And now, let's write down a few formulas for you to get a feel how the OR function in Excel works.
 
-![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/isblank/isblank001.gif)
+![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/logical%20functions/excel-or-function.png)
 
 
 As well as Excel AND function, OR is widely used to expand the usefulness of other Excel functions that perform logical tests, e.g. the IF function. Here are just a couple of examples:
@@ -198,7 +198,7 @@ TRUE if either argument evaluates to TRUE.
 FALSE if both arguments are TRUE or neither is TRUE.
 This might be easier to understand from the formula examples:
 
-![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/isblank/isblank001.gif)
+![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/logical%20functions/excel-xor-function.PNG)
 
 
 ## Using the NOT function
@@ -216,6 +216,6 @@ For example, when reviewing a list of attire, you may want to exclude some color
 
     =NOT(C2="black")
     
-![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/isblank/isblank001.gif)
+![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/logical%20functions/excel-not-function.png)
 
 Translated into plain English, the formula tells Excel to do the following. If the cell C2 is not empty, multiply the number in C2 by 0.15, which gives the 15% bonus to each salesman who has made any extra sales. If C2 is blank, the text "No bonus :(" appears.
