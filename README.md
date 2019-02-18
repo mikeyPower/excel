@@ -172,3 +172,32 @@ The difference is that the OR function returns TRUE if at least one if the argum
 The syntax of the Excel OR function is very similar to AND:
 
     OR(logical1, [logical2], …)
+    
+And now, let's write down a few formulas for you to get a feel how the OR function in Excel works.
+
+![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/isblank/isblank001.gif)
+
+
+As well as Excel AND function, OR is widely used to expand the usefulness of other Excel functions that perform logical tests, e.g. the IF function. Here are just a couple of examples:
+
+
+=IF(OR(B2>30, C2>20), "Good", "Bad")
+
+The formula returns "Good" if a number in cell B3 is greater than 30 or the number in C2 is greater than 20, "Bad" otherwise.
+
+## Using the XOR function
+
+The syntax of the XOR function is identical to OR's :
+
+    XOR(logical1, [logical2],…)
+The first logical statement (Logical 1) is required, additional logical values are optional. You can test up to 254 conditions in one formula, and these can be logical values, arrays, or references that evaluate to either TRUE or FALSE.
+
+In the simplest version, an XOR formula contains just 2 logical statements and returns:
+
+TRUE if either argument evaluates to TRUE.
+FALSE if both arguments are TRUE or neither is TRUE.
+This might be easier to understand from the formula examples:
+
+
+## Using the NOT function
+
