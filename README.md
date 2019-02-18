@@ -114,3 +114,21 @@ If you want to compare text values taking in to account their case differences, 
 Where text 1 and text2 are the values you want to compare. If the values are exactly the same, including case, Excel returns TRUE; otherwise, it returns FALSE.
 
 ![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/logical%20operators/equal-to-case-sensitive.png)
+
+## How to use the ISBLANK Function
+
+The Microsoft Excel ISBLANK function can be used to check for blank or null values. The ISBLANK function returns TRUE if the value is blank. The ISBLANK function returns FALSE if the value is not blank.
+
+![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/isblank/isblank001.gif)
+
+Based on the Excel spreadsheet above, the following ISBLANK examples would return:
+
+    =ISBLANK(A1)
+    Result: FALSE
+
+    =ISBLANK(A2)
+    Result: TRUE
+
+    =ISBLANK("Tech on the Net")
+    Result: FALSE
+    
