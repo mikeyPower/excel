@@ -198,6 +198,24 @@ TRUE if either argument evaluates to TRUE.
 FALSE if both arguments are TRUE or neither is TRUE.
 This might be easier to understand from the formula examples:
 
+![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/isblank/isblank001.gif)
+
 
 ## Using the NOT function
 
+The NOT function is one of the simplest Excel functions in terms of syntax:
+
+NOT(logical)
+You use the NOT function in Excel to reverse a value of its argument. In other words, if logical evaluates to FALSE, the NOT function returns TRUE and vice versa. For example, both of the below formulas return FALSE:
+
+    =NOT(TRUE)
+
+    =NOT(2*2=4)
+    
+For example, when reviewing a list of attire, you may want to exclude some color that does not suit you.  I'm not particularly fond of black, so I go ahead with this formula:
+
+    =NOT(C2="black")
+    
+![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/isblank/isblank001.gif)
+
+Translated into plain English, the formula tells Excel to do the following. If the cell C2 is not empty, multiply the number in C2 by 0.15, which gives the 15% bonus to each salesman who has made any extra sales. If C2 is blank, the text "No bonus :(" appears.
