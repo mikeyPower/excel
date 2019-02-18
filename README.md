@@ -34,3 +34,52 @@ If you want to count the number of cells without errors, you can use this array 
 ![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/6.png)
 
 ![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/7png.png)
+
+
+## Highlight rows based on a certain criteria
+
+Suppose you have a dataset as shown below and you want to highlight all the records where the Sales Rep name is Bob.
+
+![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/7png.png)
+
+Here are the steps to do this:
+
+1. Select the entire dataset (A2:A17 in this example).
+2. Click the Home tab.
+
+![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/7png.png)
+
+3. In the Styles group, click on Conditional Formatting.
+
+
+![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/7png.png)
+
+4. Click on ‘New Rules’.
+
+![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/7png.png)
+
+5. In the ‘New Formatting Rule’ dialog box, click on ‘Use a formula to determine which cells to format’.
+
+![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/7png.png)
+
+6. In the formula field, enter the following formula: =$C2=”Bob”
+
+![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/7png.png)
+
+7. Click the ‘Format’ button.
+
+![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/7png.png)
+
+8. In the dialog box that opens, set the color in which you want the row to get highlighted.
+
+![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/7png.png)
+
+Click OK.
+
+This will highlight all the rows where the name of the Sales Rep is ‘Bob’.
+
+![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/7png.png)
+
+Note that the trick here is to use a dollar sign ($) before the column alphabet ($C1). By doing this, we have locked the column to always be C. So even when cell A2 is being checked for the formula, it will check C2, and when A3 is checked for the condition, it will check C3.
+
+This allows us to highlight the entire row by conditional formatting.
