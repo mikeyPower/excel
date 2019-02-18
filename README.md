@@ -23,7 +23,7 @@ Note: In the above formula, A1:C10 is the range that you want to use, you can ch
 
 2. Then press Enter key, and the number of #DIV/0! error cells will be counted.
 
-![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/4.png)
+![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/5.png)
 
 Note: In the above formula, A1:C10 is the range that you want to use, and #DIV/0! is the type error that you want to count, you can replace it as your need.
 
@@ -31,6 +31,6 @@ Note: In the above formula, A1:C10 is the range that you want to use, and #DIV/0
 
 If you want to count the number of cells without errors, you can use this array formula: =SUM(IF( NOT( ISERROR(A1:C10)),1 )), and then press Ctrl+Shift+Enter keys simultaneously. And all the cells ignoring error cells will be calculated (including blank cells). See screenshots
 
-![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/5.png)
-
 ![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/6.png)
+
+![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/7.png)
