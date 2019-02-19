@@ -285,8 +285,8 @@ Explanation: =COUNTIF($A$1:$C$10,A1) counts the number of names in the range A1:
 
 For example if you want Col C to show entries unique to Col A, and Col D to show entries unique to Col B:
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+| A             | B             | C                                         |D
+| ------------- |:-------------:|:-----------------------------------------:|-----------------------------------------:|
+| 1             | 3             | =IF(ISERROR(MATCH(B1,$A$1:$A$5,0)),B1,"") |=IF(ISERROR(MATCH(B1,$A$1:$A$5,0)),B1,"") |
+| 2             | 5             | (fill down)                               |(fill down)                               |
+| 3             | 8             | ..                                        |..                                        |
