@@ -287,6 +287,6 @@ For example if you want Col C to show entries unique to Col A, and Col D to show
 
 | A             | B             | C                                         |D
 | ------------- |:-------------:|:-----------------------------------------:|-----------------------------------------:|
-| 1             | 3             | =IF(ISERROR(MATCH(B1,$A$1:$A$5,0)),B1,"") |=IF(ISERROR(MATCH(B1,$A$1:$A$5,0)),B1,"") |
+| 1             | 3             | =IF(ISERROR(MATCH(A1,$B$1:$B$3,0)),A1,"") |=IF(ISERROR(MATCH(B1,$A$1:$A$3,0)),B1,"") |
 | 2             | 5             | (fill down)                               |(fill down)                               |
 | 3             | 8             | ..                                        |..                                        |
