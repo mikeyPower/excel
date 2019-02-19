@@ -181,7 +181,7 @@ And now, let's write down a few formulas for you to get a feel how the OR functi
 As well as Excel AND function, OR is widely used to expand the usefulness of other Excel functions that perform logical tests, e.g. the IF function. Here are just a couple of examples:
 
 
-=IF(OR(B2>30, C2>20), "Good", "Bad")
+    =IF(OR(B2>30, C2>20), "Good", "Bad")
 
 The formula returns "Good" if a number in cell B3 is greater than 30 or the number in C2 is greater than 20, "Bad" otherwise.
 
