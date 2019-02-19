@@ -256,7 +256,7 @@ The function counts only the cells that have data, but be aware that "data" can 
 
 Result. Excel highlights the duplicate names.
 
-![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/duplicates/select-formatting-style.png)
+![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/duplicates/duplicates.png)
 
 
 As you can see, Excel highlights duplicates (Juliet, Delta), triplicates (Sierra), quadruplicates (if we have any), etc. Execute the following steps to highlight triplicates only.
