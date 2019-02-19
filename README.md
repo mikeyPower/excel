@@ -219,3 +219,18 @@ For example, when reviewing a list of attire, you may want to exclude some color
 ![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/logical%20functions/excel-not-function.png)
 
 Translated into plain English, the formula tells Excel to do the following. If the cell C2 is not empty, multiply the number in C2 by 0.15, which gives the 15% bonus to each salesman who has made any extra sales. If C2 is blank, the text "No bonus :(" appears.
+
+
+## Use COUNTA to count cells that aren't blank
+
+The function counts only the cells that have data, but be aware that "data" can include spaces, which you can't see. And yes, you could probably count the blanks in this example yourself, but imagine doing that in a big workbook. So, to use the formula:
+
+1. Determine the range of cells you want to count. The example above used cells B2 through D6.
+
+2. Select the cell where you want to see the result, the actual count. Let's call that the result cell.
+
+3. In either the result cell or the formula bar, type the formula and press Enter, like so:
+
+        =COUNTA(B2:B6)
+        
+![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/COUNTA/counta.jpg)
