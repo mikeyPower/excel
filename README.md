@@ -283,7 +283,7 @@ Explanation: =COUNTIF($A$1:$C$10,A1) counts the number of names in the range A1:
 
 ## Comparing Columns to show unique values
 
-For example if you want Col C to show entries unique to Col A, and Col D to show entries unique to Col B:
+For example if you want Col C to show entries unique to Col A, and Col D to show entries unique to Col B. These forumlas essentially compares Col A to Col B (and visa versa) and returns there respective unique values.
 
 | A             | B             | C                                         |D
 | ------------- |:-------------:|:-----------------------------------------:|-----------------------------------------:|
