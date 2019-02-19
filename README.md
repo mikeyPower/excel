@@ -280,3 +280,13 @@ Result. Excel highlights the triplicate names.
 ![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/duplicates/triplicates.png)
 
 Explanation: =COUNTIF($A$1:$C$10,A1) counts the number of names in the range A1:C10 that are equal to the name in cell A1. If COUNTIF($A$1:$C$10,A1) = 3, Excel formats the cell. Because we selected the range A1:C10 before we clicked on Conditional Formatting, Excel automatically copies the formula to the other cells. Thus, cell A2 contains the formula =COUNTIF($A$1:$C$10,A2)=3, cell A3 =COUNTIF($A$1:$C$10,A3)=3, etc. Notice how we created an absolute reference ($A$1:$C$10) to fix this reference.
+
+## Comparing Columns to show unique values
+
+For example if you want Col C to show entries unique to Col A, and Col D to show entries unique to Col B:
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
