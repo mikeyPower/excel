@@ -6,7 +6,7 @@
 
 ![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/1.png)
 
-2. Then press Ctrl+Shift+Enter keys together, and you will get the number of all the error values of the range.
+2. Then press **Ctrl+Shift+Enter** keys together, and you will get the number of all the error values of the range.
 
 ![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/2.png)
 
@@ -17,7 +17,7 @@ Note: In the above formula, A1:C10 is the range that you want to use, you can ch
 ## Count The Number Of Specific Types Of Errors In A Range
 
 
-1. In a blank cell, please type this formula =COUNTIF(A1:C10,"#DIV/0!"), see screenshot:
+1. In a blank cell, please type this formula **=COUNTIF(A1:C10,"#DIV/0!")**, see screenshot:
 
 ![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/doc-count-errors3.png)
 
@@ -29,7 +29,7 @@ Note: In the above formula, A1:C10 is the range that you want to use, and #DIV/0
 
 ## Count The Number Of Cells Ignoring Errors In A Range
 
-If you want to count the number of cells without errors, you can use this array formula: =SUM(IF( NOT( ISERROR(A1:C10)),1 )), and then press Ctrl+Shift+Enter keys simultaneously. And all the cells ignoring error cells will be calculated (including blank cells). See screenshots
+If you want to count the number of cells without errors, you can use this array formula: =SUM(IF( NOT( ISERROR(A1:C10)),1 )), and then press **Ctrl+Shift+Enter** keys simultaneously. And all the cells ignoring error cells will be calculated (including blank cells). See screenshots
 
 ![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/6.png)
 
@@ -62,7 +62,7 @@ Here are the steps to do this:
 
 ![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/highlight/Use-Formula-Option-to-Highlight-Rows-based-on-cell-value.png)
 
-6. In the formula field, enter the following formula: =$C2=”Bob”
+6. In the formula field, enter the following formula: **=$C2=”Bob”**.
 
 ![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/highlight/Specify-the-Formula-to-Highlight-rows-if-it-is-True.png)
 
