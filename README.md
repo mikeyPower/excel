@@ -234,3 +234,49 @@ The function counts only the cells that have data, but be aware that "data" can 
         =COUNTA(B2:B6)
         
 ![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/COUNTA/counta.jpg)
+
+
+## Find & Highlight Duplicates in a certain range
+
+1. Select the range A1:C10.
+
+![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/duplicates/find-duplicates-example.png)
+
+2. On the Home tab, in the Styles group, click Conditional Formatting.
+
+![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/duplicates/click-conditional-formatting.png)
+
+3. Click Highlight Cells Rules, Duplicate Values.
+
+![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/duplicates/click-highlight-cells-rules-duplicate-values.png)
+
+4. Select a formatting style and click OK
+
+![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/duplicates/select-formatting-style.png)
+
+Result. Excel highlights the duplicate names.
+
+![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/duplicates/select-formatting-style.png)
+
+
+As you can see, Excel highlights duplicates (Juliet, Delta), triplicates (Sierra), quadruplicates (if we have any), etc. Execute the following steps to highlight triplicates only.
+
+## Find & Highlight Duplicates of a certain value
+
+1. Create a new rule.
+
+![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/duplicates/new-rule.png)
+
+2. Select 'Use a formula to determine which cells to format'.
+
+3.  Enter the formula **=COUNTIF($A$1:$C$10,A1)=3**.
+
+4. Select a formatting style and click OK.
+
+![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/duplicates/new-formatting-rule.png)
+
+Result. Excel highlights the triplicate names.
+
+![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/duplicates/triplicates.png)
+
+Explanation: =COUNTIF($A$1:$C$10,A1) counts the number of names in the range A1:C10 that are equal to the name in cell A1. If COUNTIF($A$1:$C$10,A1) = 3, Excel formats the cell. Because we selected the range A1:C10 before we clicked on Conditional Formatting, Excel automatically copies the formula to the other cells. Thus, cell A2 contains the formula =COUNTIF($A$1:$C$10,A2)=3, cell A3 =COUNTIF($A$1:$C$10,A3)=3, etc. Notice how we created an absolute reference ($A$1:$C$10) to fix this reference.
