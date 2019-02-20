@@ -13,7 +13,7 @@
 
 Note: In the above formula, A1:C10 is the range that you want to use, you can change it as you need.
 
-
+</br>
 ## Count The Number Of Specific Types Of Errors In A Range
 
 
@@ -27,6 +27,7 @@ Note: In the above formula, A1:C10 is the range that you want to use, you can ch
 
 Note: In the above formula, A1:C10 is the range that you want to use, and #DIV/0! is the type error that you want to count, you can replace it as your need.
 
+</br>
 ## Count The Number Of Cells Ignoring Errors In A Range
 
 If you want to count the number of cells without errors, you can use this array formula: =SUM(IF( NOT( ISERROR(A1:C10)),1 )), and then press **Ctrl+Shift+Enter** keys simultaneously. And all the cells ignoring error cells will be calculated (including blank cells). See screenshots
@@ -35,7 +36,7 @@ If you want to count the number of cells without errors, you can use this array 
 
 ![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/7png.png)
 
-
+</br>
 ## Highlight rows based on a certain criteria
 
 Suppose you have a dataset as shown below and you want to highlight all the records where the Sales Rep name is Bob.
@@ -84,7 +85,7 @@ Note that the trick here is to use a dollar sign ($) before the column alphabet 
 
 This allows us to highlight the entire row by conditional formatting.
 
-
+</br>
 ## Excel logical operators - overview
 
 
@@ -94,7 +95,7 @@ The screenshot below demonstrates the results returned by Equal to, Not equal to
 
 ![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/logical%20operators/excel-logical-operators-example.png)
 
-
+</br>
 ## Example 1. Using the "Equal to" operator with dates
 
 You might be surprised to know that the Equal to logical operator cannot compare dates as easily as numbers. For example, if the cells A1 and A2 contain the date "12/1/2014", the formula =A1=A2 will return TRUE exactly as it should.
@@ -103,6 +104,7 @@ To get the correct result, you must always wrap a date in the DATEVALUE function
 
 ![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/logical%20operators/equal-to-dates.png)
 
+</br>
 ## Example 2. Using the "Equal to" operator with text values
 
 Using Excel's Equal to operator with text values does not require any extra twists. The only thing you should keep in mind is that the Equal to logical operator in Excel is case-insensitive, meaning that case differences are ignored when comparing text values.
@@ -115,6 +117,7 @@ Where text 1 and text2 are the values you want to compare. If the values are exa
 
 ![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/logical%20operators/equal-to-case-sensitive.png)
 
+</br>
 ## How to use the ISBLANK Function
 
 The Microsoft Excel ISBLANK function can be used to check for blank or null values. The ISBLANK function returns TRUE if the value is blank. The ISBLANK function returns FALSE if the value is not blank.
@@ -131,7 +134,8 @@ Based on the Excel spreadsheet above, the following ISBLANK examples would retur
 
     =ISBLANK("Tech on the Net")
     Result: FALSE
-    
+
+</br>
 ## Excel Logical Functions
 
 The following table provides a short summary of what each logical function does to help you choose the right formula for a specific task.
@@ -145,6 +149,7 @@ Excel logical functions - facts and figures
 4. A logical function returns the #VALUE! error if none of the arguments evaluate to logical values.
 5. A logical function returns the #NAME? error if you've misspell the function's name or attempted to use the function in an earlier Excel version that does not support it. For example, the XOR function can be used in Excel 2016 and 2013 only.
 
+</br>
 ## Using AND function
 
 The AND function tests the conditions you specify and returns TRUE if all of the conditions evaluate to TRUE, FALSE otherwise.
@@ -164,7 +169,7 @@ One of the most common uses of the Excel AND function is found in the logical_te
     
 ![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/logical%20functions/excel-and-if-functions.png)
 
-
+</br>
 ## Using the OR function
 
 The difference is that the OR function returns TRUE if at least one if the arguments evaluates to TRUE, and returns FALSE if all arguments are FALSE. The OR function is available in all versions of Excel 2016 - 2000.
@@ -185,6 +190,7 @@ As well as Excel AND function, OR is widely used to expand the usefulness of oth
 
 The formula returns "Good" if a number in cell B3 is greater than 30 or the number in C2 is greater than 20, "Bad" otherwise.
 
+</br>
 ## Using the XOR function
 
 The syntax of the XOR function is identical to OR's :
@@ -200,7 +206,7 @@ This might be easier to understand from the formula examples:
 
 ![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/logical%20functions/excel-xor-function.PNG)
 
-
+</br>
 ## Using the NOT function
 
 The NOT function is one of the simplest Excel functions in terms of syntax:
@@ -220,7 +226,7 @@ For example, when reviewing a list of attire, you may want to exclude some color
 
 Translated into plain English, the formula tells Excel to do the following. If the cell C2 is not empty, multiply the number in C2 by 0.15, which gives the 15% bonus to each salesman who has made any extra sales. If C2 is blank, the text "No bonus :(" appears.
 
-
+</br>
 ## Use COUNTA to count cells that aren't blank
 
 The function counts only the cells that have data, but be aware that "data" can include spaces, which you can't see. And yes, you could probably count the blanks in this example yourself, but imagine doing that in a big workbook. So, to use the formula:
@@ -235,7 +241,7 @@ The function counts only the cells that have data, but be aware that "data" can 
         
 ![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/COUNTA/counta.jpg)
 
-
+</br>
 ## Find & Highlight Duplicates in a certain range
 
 1. Select the range A1:C10.
@@ -261,6 +267,7 @@ Result. Excel highlights the duplicate names.
 
 As you can see, Excel highlights duplicates (Juliet, Delta), triplicates (Sierra), quadruplicates (if we have any), etc. Execute the following steps to highlight triplicates only.
 
+</br>
 ## Find & Highlight Duplicates of a certain value
 
 1. Create a new rule.
@@ -281,6 +288,7 @@ Result. Excel highlights the triplicate names.
 
 Explanation: =COUNTIF($A$1:$C$10,A1) counts the number of names in the range A1:C10 that are equal to the name in cell A1. If COUNTIF($A$1:$C$10,A1) = 3, Excel formats the cell. Because we selected the range A1:C10 before we clicked on Conditional Formatting, Excel automatically copies the formula to the other cells. Thus, cell A2 contains the formula =COUNTIF($A$1:$C$10,A2)=3, cell A3 =COUNTIF($A$1:$C$10,A3)=3, etc. Notice how we created an absolute reference ($A$1:$C$10) to fix this reference.
 
+</br>
 ## Comparing Columns to show unique values
 
 For example if you want Col C to show entries unique to Col A, and Col D to show entries unique to Col B. These forumlas essentially compares Col A to Col B (and visa versa) and returns there respective unique values.
