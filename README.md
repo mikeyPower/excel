@@ -1,5 +1,22 @@
 # work_stuff
 
+# Table of Contents
+1. [How to Count all errors in a range](https://github.com/mikeyPower/work_stuff#how-to-count-all-errors-in-a-range)
+2. [Count the number of cellignoring errors in a range](https://github.com/mikeyPower/work_stuff#count-the-number-of-cells-ignoring-errors-in-a-range)
+3. [Highlight rows based on a certain criteria](https://github.com/mikeyPower/work_stuff#highlight-rows-based-on-a-certain-criteria)
+4. [logical operators overview](https://github.com/mikeyPower/work_stuff#excel-logical-operators---overview)
+5. [How to use the isblank function](https://github.com/mikeyPower/work_stuff#how-to-use-the-isblank-function)
+6. [Logical functions](https://github.com/mikeyPower/work_stuff#excel-logical-functions)
+7. [Using AND function](https://github.com/mikeyPower/work_stuff#using-and-function)
+8. [Using the OR function](https://github.com/mikeyPower/work_stuff#using-the-or-function)
+9. [Using the XOR function](https://github.com/mikeyPower/work_stuff#using-the-xor-function)
+10. [Using the NOT function](https://github.com/mikeyPower/work_stuff#using-the-not-function)
+11. [Use COUNTA to count cells that arent blank](https://github.com/mikeyPower/work_stuff#use-counta-to-count-cells-that-arent-blank)
+12. [Highlight duplicates in a certain range](https://github.com/mikeyPower/work_stuff#find--highlight-duplicates-in-a-certain-range)
+13. [Highlight duplicates of a certain-value](https://github.com/mikeyPower/work_stuff#find--highlight-duplicates-of-a-certain-value)
+14. [Comparing columns to show unique values](https://github.com/mikeyPower/work_stuff#comparing-columns-to-show-unique-values)
+
+
 ## How to Count all errors in a range
 
 1. In a blank cell, type this formula **=SUM(IF(ISERROR(A1:C10),1))**.
