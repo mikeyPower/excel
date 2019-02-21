@@ -15,7 +15,7 @@
 12. [Highlight duplicates in a certain range](https://github.com/mikeyPower/work_stuff#find--highlight-duplicates-in-a-certain-range)
 13. [Highlight duplicates of a certain-value](https://github.com/mikeyPower/work_stuff#find--highlight-duplicates-of-a-certain-value)
 14. [Comparing columns to show unique values](https://github.com/mikeyPower/work_stuff#comparing-columns-to-show-unique-values)
-
+15.
 
 ## How to Count all errors in a range
 
@@ -315,3 +315,38 @@ For example if you want Col C to show entries unique to Col A, and Col D to show
 | 1             | 3             | =IF(ISERROR(MATCH(A1,$B$1:$B$3,0)),A1,"") |=IF(ISERROR(MATCH(B1,$A$1:$A$3,0)),B1,"") |
 | 2             | 5             | (fill down)                               |(fill down)                               |
 | 3             | 8             | ..                                        |..                                        |
+
+
+
+## Using VLOOKUP
+
+1. The VLOOKUP function below looks up the value 53 (first argument) in the leftmost column of the red table (second argument).
+
+![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/vlookup/vlookup_overview.PNG)
+
+2. The value 4 (third argument) tells the VLOOKUP function to return the value in the same row from the fourth column of the red table.
+
+![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/vlookup/vlookup_return.PNG)
+
+Note: the Boolean FALSE (fourth argument) tells the VLOOKUP function to return an exact match. If the VLOOKUP function cannot find the value 53 in the first column, it will return a #N/A error.
+
+The VLOOKUP function always looks up a value in the leftmost column of a table and returns the corresponding value from a column to the right. No worries, you can use the INDEX and the MATCH function in Excel to perform a left lookup.
+
+If the leftmost column of the table contains duplicates, the VLOOKUP function matches the first instance.
+
+The VLOOKUP function in Excel performs a case-insensitive lookup. You can use the INDEX, MATCH and the EXACT function in Excel to perform a case-sensitive lookup.
+## Approximate Match
+
+1. The VLOOKUP function below looks up the value 85 (first argument) in the leftmost column of the red table (second argument). There's just one problem. There's no value 85 in the first column.
+
+![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/vlookup/approx.PNG)
+
+2. Fortunately, the Boolean TRUE (fourth argument) tells the VLOOKUP function to return an approximate match. If the VLOOKUP function cannot find the value 85 in the first column, it will return the largest value smaller than 85. In this example, this will be the value 80.
+
+![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/vlookup/return_approx.PNG)
+
+3. The value 2 (third argument) tells the VLOOKUP function to return the value in the same row from the second column of the red table.
+
+![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/vlookup/vlookup_return_value.PNG)
+
+Note: always sort the leftmost column of the red table in ascending order if you use the VLOOKUP function in approximate match mode (fourth argument set to TRUE).
