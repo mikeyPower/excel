@@ -15,7 +15,7 @@
 12. [Highlight duplicates in a certain range](https://github.com/mikeyPower/work_stuff#find--highlight-duplicates-in-a-certain-range)
 13. [Highlight duplicates of a certain-value](https://github.com/mikeyPower/work_stuff#find--highlight-duplicates-of-a-certain-value)
 14. [Comparing columns to show unique values](https://github.com/mikeyPower/work_stuff#comparing-columns-to-show-unique-values)
-15.
+15. [References](https://github.com/mikeyPower/work_stuff#references)
 
 ## How to Count all errors in a range
 
@@ -350,3 +350,11 @@ The VLOOKUP function in Excel performs a case-insensitive lookup. You can use th
 ![alt text](https://github.com/mikeyPower/work_stuff/blob/master/Images%20for%20excel/vlookup/vlookup_return_value.PNG)
 
 Note: always sort the leftmost column of the red table in ascending order if you use the VLOOKUP function in approximate match mode (fourth argument set to TRUE).
+
+
+## References
+
+
+1. [Exceljet](https://exceljet.net/)
+2. [Ablebits](https://www.ablebits.com/)
+3. [stackoverflow](https://stackoverflow.com/)
