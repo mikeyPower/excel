@@ -351,7 +351,14 @@ The VLOOKUP function in Excel performs a case-insensitive lookup. You can use th
 
 Note: always sort the leftmost column of the red table in ascending order if you use the VLOOKUP function in approximate match mode (fourth argument set to TRUE).
 
+## Count Unique Occurences in Excel
 
+The following formula will count the number of unique items in A1:A20000
+
+    =SUMPRODUCT(1/COUNTIF(A1:A20000,A1:A20000))
+    
+    
+    
 ## References
 
 
