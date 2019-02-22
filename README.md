@@ -373,3 +373,4 @@ TO DO: Need to explain some more
 1. [Exceljet](https://exceljet.net/)
 2. [Ablebits](https://www.ablebits.com/)
 3. [stackoverflow](https://stackoverflow.com/)
+4. [Microsoft Support](https://support.office.com/)
