@@ -357,7 +357,9 @@ The following formula will count the number of unique items in A1:A20000
 
     =SUMPRODUCT(1/COUNTIF(A1:A20000,A1:A20000))
     
-    
+Here were using COUNTIF to count the number of cells in a range that meets a criteria which in this case returns an array of counts of each item in the range.
+
+    =SUMPRODUCT(1/{1;2;1;3;2;1;3;3;....;3;1;5})
     
 ## References
 
