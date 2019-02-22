@@ -15,6 +15,8 @@
 12. [Highlight duplicates in a certain range](https://github.com/mikeyPower/work_stuff#find--highlight-duplicates-in-a-certain-range)
 13. [Highlight duplicates of a certain-value](https://github.com/mikeyPower/work_stuff#find--highlight-duplicates-of-a-certain-value)
 14. [Comparing columns to show unique values](https://github.com/mikeyPower/work_stuff#comparing-columns-to-show-unique-values)
+15. [Using VLOOKUP](https://github.com/mikeyPower/work_stuff#using-vlookup)
+16. [Count Unique Occurences in Excel](https://github.com/mikeyPower/work_stuff#count-unique-occurences-in-excel)
 15. [References](https://github.com/mikeyPower/work_stuff#references)
 
 ## How to Count all errors in a range
@@ -335,6 +337,8 @@ The VLOOKUP function always looks up a value in the leftmost column of a table a
 If the leftmost column of the table contains duplicates, the VLOOKUP function matches the first instance.
 
 The VLOOKUP function in Excel performs a case-insensitive lookup. You can use the INDEX, MATCH and the EXACT function in Excel to perform a case-sensitive lookup.
+
+
 ## Approximate Match
 
 1. The VLOOKUP function below looks up the value 85 (first argument) in the leftmost column of the red table (second argument). There's just one problem. There's no value 85 in the first column.
@@ -360,6 +364,8 @@ The following formula will count the number of unique items in A1:A20000
 Here were using COUNTIF to count the number of cells in a range that meets a criteria which in this case returns an array of counts of each item in the range.
 
     =SUMPRODUCT(1/{1;2;1;3;2;1;3;3;....;3;1;5})
+  
+TO DO: Need to explain some more
     
 ## References
 
