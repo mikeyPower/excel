@@ -1,4 +1,4 @@
-# work_stuff
+# excel
 
 # Table of Contents
 1. [How to Count all errors in a range](https://github.com/mikeyPower/work_stuff#how-to-count-all-errors-in-a-range)
