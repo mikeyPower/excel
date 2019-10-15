@@ -364,8 +364,12 @@ The following formula will count the number of unique items in A1:A20000
 Here were using COUNTIF to count the number of cells in a range that meets a criteria which in this case returns an array of counts of each item in the range.
 
     =SUMPRODUCT(1/{1;2;1;3;2;1;3;3;....;3;1;5})
-  
-TO DO: Need to explain some more
+ 
+ ## Select a Range of Cells
+ 
+ In order to select a specified number of cells we can simply enter this into the box that has our current re
+ 
+ ![excel_select](https://user-images.githubusercontent.com/17595044/66813244-54187800-ef2c-11e9-9a48-4708efca5014.PNG)
     
 ## References
 
