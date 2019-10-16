@@ -17,6 +17,7 @@
 14. [Comparing columns to show unique values](https://github.com/mikeyPower/work_stuff#comparing-columns-to-show-unique-values)
 15. [Using VLOOKUP](https://github.com/mikeyPower/work_stuff#using-vlookup)
 16. [Count Unique Occurences in Excel](https://github.com/mikeyPower/work_stuff#count-unique-occurences-in-excel)
+17. [Select a Range of Cells](https://github.com/mikeyPower/work_stuff#select-a-range-of-cells)
 15. [References](https://github.com/mikeyPower/work_stuff#references)
 
 ## How to Count all errors in a range
@@ -367,9 +368,11 @@ Here were using COUNTIF to count the number of cells in a range that meets a cri
  
  ## Select a Range of Cells
  
- In order to select a specified number of cells we can simply enter this into the box that has our current re
+ In order to select a specified number of cells we can simply enter this into the box that has our current reference A1
  
  ![excel_select](https://user-images.githubusercontent.com/17595044/66813244-54187800-ef2c-11e9-9a48-4708efca5014.PNG)
+ 
+ To select the next 10 rows in Column A simply type A1:A10 into the box and hit enter.
     
 ## References
 
