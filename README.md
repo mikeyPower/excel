@@ -20,6 +20,7 @@
 17. [Select a Range of Cells](https://github.com/mikeyPower/work_stuff#select-a-range-of-cells)
 18. [Split Text Strings Into Multiple Columns By Space Comma Delimiter](https://github.com/mikeyPower/work_stuff#split-text-strings-into-multiple-columns-by-space-comma-delimiter)
 19. [How to Group Rows](https://github.com/mikeyPower/work_stuff#how-to-group-rows)
+20. [Copy visible cells only](https://github.com/mikeyPower/work_stuff#copy-visible-cells-only)
 15. [References](https://github.com/mikeyPower/work_stuff#references)
 
 ## How to Count all errors in a range
@@ -406,6 +407,24 @@ This will add a bar on the left side of the worksheet that spans the selected ro
 ![image](https://user-images.githubusercontent.com/17595044/76209523-fb5abc00-61f9-11ea-8504-4fd60acd0362.png)
 
 In a similar manner, you create as many outer groups as necessary.
+
+## Copy visible cells only
+
+Select the cells that you want to copy
+
+Click Home > Find & Select, and pick Go To Special.
+
+![image](https://user-images.githubusercontent.com/17595044/76212012-6c50a280-61ff-11ea-8825-3c88c5af7a7c.png)
+
+Click Visible cells only > OK.
+
+![image](https://user-images.githubusercontent.com/17595044/76212121-a9b53000-61ff-11ea-931e-e85e58a6e20b.png)
+
+Click Copy (or press Ctrl+C).
+
+![image](https://user-images.githubusercontent.com/17595044/76212046-85f1ea00-61ff-11ea-90ab-de443f0f02cd.png)
+
+Select the upper-left cell of the paste area and click Paste (or press Ctrl+V).
     
 ## References
 
