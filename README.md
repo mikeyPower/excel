@@ -18,6 +18,7 @@
 15. [Using VLOOKUP](https://github.com/mikeyPower/work_stuff#using-vlookup)
 16. [Count Unique Occurences in Excel](https://github.com/mikeyPower/work_stuff#count-unique-occurences-in-excel)
 17. [Select a Range of Cells](https://github.com/mikeyPower/work_stuff#select-a-range-of-cells)
+18. [Split Text Strings Into Multiple Columns By Space Comma Delimiter](https://github.com/mikeyPower/work_stuff#split-text-strings-into-multiple-columns-by-space-comma-delimiter)
 15. [References](https://github.com/mikeyPower/work_stuff#references)
 
 ## How to Count all errors in a range
@@ -373,6 +374,20 @@ Here were using COUNTIF to count the number of cells in a range that meets a cri
  ![excel_select](https://user-images.githubusercontent.com/17595044/66813244-54187800-ef2c-11e9-9a48-4708efca5014.PNG)
  
  To select the next 10 rows in Column A simply type A1:A10 into the box and hit enter.
+ 
+ ## Split Text Strings Into Multiple Columns By Space/Comma/Delimiter
+ 
+ Select the column list you want to split by delimiter, and click Data > Text to Columns. See screenshot:
+ 
+ ![image](https://user-images.githubusercontent.com/17595044/76208885-80dd6c80-61f8-11ea-8ac3-bf9e6be88469.png)
+ 
+ Then a Convert Text to columns Wizard dialog pops out, and check Delimited option, and click Next button. See screenshot:
+ 
+ ![image](https://user-images.githubusercontent.com/17595044/76208924-95ba0000-61f8-11ea-83a4-5c55cb5df795.png)
+
+ In the opening Convert to Text to Columns Wizard - Step 2 of 3 dialog box, please check the delimiter you need to split the data by.
+ 
+ ![image](https://user-images.githubusercontent.com/17595044/76208957-a79ba300-61f8-11ea-8dad-0382416b2e5e.png)
     
 ## References
 
