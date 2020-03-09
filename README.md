@@ -19,6 +19,7 @@
 16. [Count Unique Occurences in Excel](https://github.com/mikeyPower/work_stuff#count-unique-occurences-in-excel)
 17. [Select a Range of Cells](https://github.com/mikeyPower/work_stuff#select-a-range-of-cells)
 18. [Split Text Strings Into Multiple Columns By Space Comma Delimiter](https://github.com/mikeyPower/work_stuff#split-text-strings-into-multiple-columns-by-space-comma-delimiter)
+19. [How to Group Rows](https://github.com/mikeyPower/work_stuff#how-to-group-rows)
 15. [References](https://github.com/mikeyPower/work_stuff#references)
 
 ## How to Count all errors in a range
@@ -375,7 +376,7 @@ Here were using COUNTIF to count the number of cells in a range that meets a cri
  
  To select the next 10 rows in Column A simply type A1:A10 into the box and hit enter.
  
- ## Split Text Strings Into Multiple Columns By Space/Comma/Delimiter
+ ## Split Text Strings Into Multiple Columns By Space Comma Delimiter
  
  Select the column list you want to split by delimiter, and click Data > Text to Columns. See screenshot:
  
@@ -388,6 +389,23 @@ Here were using COUNTIF to count the number of cells in a range that meets a cri
  In the opening Convert to Text to Columns Wizard - Step 2 of 3 dialog box, please check the delimiter you need to split the data by.
  
  ![image](https://user-images.githubusercontent.com/17595044/76208957-a79ba300-61f8-11ea-8dad-0382416b2e5e.png)
+ 
+ ## How to Group Rows
+ 
+Select one of the larger subsets of data, including all of the intermediate summary rows and their detail rows.
+In the dataset below, to group all data for row 9 (East Total), we select rows 2 through 8.
+
+![image](https://user-images.githubusercontent.com/17595044/76209461-d2d2c200-61f9-11ea-984d-22f63b35e312.png)
+
+On the Data tab, in the Outline group, click the Group button, select Rows, and click OK.
+
+![image](https://user-images.githubusercontent.com/17595044/76209504-eb42dc80-61f9-11ea-8905-4edf66cb348e.png)
+
+This will add a bar on the left side of the worksheet that spans the selected rows:
+
+![image](https://user-images.githubusercontent.com/17595044/76209523-fb5abc00-61f9-11ea-8504-4fd60acd0362.png)
+
+In a similar manner, you create as many outer groups as necessary.
     
 ## References
 
